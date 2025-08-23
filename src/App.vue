@@ -45,6 +45,7 @@ const switchUnit = (value: string) => {
     else if (parseFloat(size.value) < 0) size.value = '0';
   }
 }
+// Hàm tính toán giá trị mới khi nhấn nút cộng hoặc trừ
 const calculator = (plus: boolean) => {
   // Chuyển đổi giá trị size sang số và cộng trừ 1
   const newSize = parseFloat((parseFloat(size.value) + (plus ? + 1 : - 1)).toFixed(2));
