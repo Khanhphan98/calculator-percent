@@ -35,6 +35,7 @@ describe('App.vue', () => {
         expect(wrapper.vm.size).toBe('0')
     })
 
+    // check tăng khi size = 100 và unit là %
     it('increments when size = 100 and unit is %', async () => {
         const wrapper: any = mount(App)
         wrapper.vm.size = '99'

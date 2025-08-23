@@ -102,6 +102,7 @@ const calculator = (plus: boolean) => {
   transition: 150ms;
 }
 
+
 .group:has(input:focus) {
   border: 1px solid #3C67FF;
   background-color: transparent;
