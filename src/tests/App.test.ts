@@ -30,7 +30,7 @@ describe('App.vue', () => {
         await wrapper.find('#minus').trigger('click') // click nút −
         expect(wrapper.vm.size).toBe('0')
 
-        // click tiếp nữa vẫn 0
+        // click continue and still value 0
         await wrapper.find('#minus').trigger('click')
         expect(wrapper.vm.size).toBe('0')
     })
@@ -41,7 +41,7 @@ describe('App.vue', () => {
         await wrapper.find('#plus').trigger('click') // click nút −
         expect(wrapper.vm.size).toBe('100')
 
-        // click tiếp nữa vẫn 0
+        // click continue and still value 0
         await wrapper.find('#plus').trigger('click')
         expect(wrapper.vm.size).toBe('100')
     })
