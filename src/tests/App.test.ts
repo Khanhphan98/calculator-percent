@@ -8,6 +8,7 @@ describe('App.vue', () => {
         const input = wrapper.find('input')
 
         // kiểm tra giá trị mặc định
+        expect(wrapper.vm.size).toBe('50')
         // helper để test input
         const testInput = async (value: string, expected: string, unit = 'px') => {
             await wrapper.vm.switchUnit(unit)
