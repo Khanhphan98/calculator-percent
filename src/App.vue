@@ -12,7 +12,7 @@ const handleSize = (value: string): string => {
   // đổi dấu phẩy thành dấu chấm
   value = value.replace(/,/g, '.');
 
-  // loại bỏ ký tự không phải số hoặc dấu chấm, trừ dấu trừ ở đầu chuỗi
+  // loại bỏ ký tự không phải số hoặc dấu chấm
   value = value.replace(/(?!^-)[^0-9.]/g, '');
 
   const dotIndex = value.indexOf('.');
@@ -28,7 +28,6 @@ const handleSize = (value: string): string => {
 
   // valid giá trị -, ., '', hoặc giá trị âm với đơn vị '%'
   if (value === '-' || value === '.' || value === '' || (parseFloat(value) < 0 && unit.value === '%')) return '0';
-  if (value.indexOf('-.') === 0) return '0';
 
   // loại bỏ số 0 ở đầu chuỗi, trừ khi giá trị là '0'
   value = value.replace(/^0+(?!$)/, '');
