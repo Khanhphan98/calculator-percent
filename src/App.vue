@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import {computed, ref} from "vue";
 
+// Xin chào, mình sẽ comment ở đây để test git
+// Bắt đầu với git commit và add
+
 const size = ref('1.0');
 const unit = ref('%');
 const disableMinus = computed(() => size.value === '0' && unit.value === '%');
