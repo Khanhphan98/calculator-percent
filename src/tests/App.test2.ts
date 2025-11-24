@@ -7,6 +7,8 @@ describe('App.vue', () => {
         const wrapper: any = mount(App)
         const input = wrapper.find('input')
 
+        // check amend commit
+
         // helper để test input
         const testInput = async (value: string, expected: string, unit = 'px') => {
             await wrapper.vm.switchUnit(unit)
