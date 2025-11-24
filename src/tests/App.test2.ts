@@ -9,6 +9,8 @@ describe('App.vue', () => {
 
         // check amend commit
 
+        // xoa commit này để chạy test
+
         // helper để test input
         const testInput = async (value: string, expected: string, unit = 'px') => {
             await wrapper.vm.switchUnit(unit)
