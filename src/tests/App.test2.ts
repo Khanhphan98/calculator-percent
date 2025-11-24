@@ -62,4 +62,18 @@ describe('App.vue', () => {
         await wrapper.vm.switchUnit('%');
         expect(wrapper.vm.size).toBe('100')
     })
+
+    it('switch unit px to % if that size > 200 then change size = 100', async () => {
+        const wrapper: any = mount(App)
+        wrapper.vm.size = '110'
+        await wrapper.vm.switchUnit('%');
+        expect(wrapper.vm.size).toBe('200')
+    })
+
+    it('switch unit px to % if that size > 300 then change size = 100', async () => {
+        const wrapper: any = mount(App)
+        wrapper.vm.size = '110'
+        await wrapper.vm.switchUnit('%');
+        expect(wrapper.vm.size).toBe('300')
+    })
 })
