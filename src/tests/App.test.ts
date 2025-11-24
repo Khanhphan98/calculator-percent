@@ -24,6 +24,8 @@ describe('App.vue', () => {
         await testInput('-1', '0', '%')
     })
 
+    // hello
+
     it('decrements when size = 0 and unit is %', async () => {
         const wrapper: any = mount(App)
         wrapper.vm.size = '1'
