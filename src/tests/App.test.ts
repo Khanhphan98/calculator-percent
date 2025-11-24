@@ -24,11 +24,6 @@ describe('App.vue', () => {
         await testInput('-1', '0', '%')
     })
 
-    it('input check 2', async () => {
-        const wrapper: any = mount(App)
-        const input = wrapper.find('input')
-    })
-
     it('decrements when size = 0 and unit is %', async () => {
         const wrapper: any = mount(App)
         wrapper.vm.size = '1'
